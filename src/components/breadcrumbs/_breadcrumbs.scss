@@ -1,0 +1,57 @@
+.breadcrumbs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 13px;
+    &_item{
+        position: relative;
+        padding-left: 20px;
+        padding-right: 25px;
+        letter-spacing: 1px;
+        &::after{
+            content: '';
+            position: absolute;
+            top: 8px;
+            left: 82px;
+            width: 8px;
+            height: 12px;
+            background-image: url('/static/images/Breadcrumbs.svg');
+            background-repeat: no-repeat;
+        } 
+        &:nth-child(2)::after{
+            content: '';
+            position: absolute;
+            top: 8px;
+            left: 94px;
+            width: 8px;
+            height: 12px;
+            background-image: url('/static/images/Breadcrumbs.svg');
+        } 
+        &:last-child:after{
+            opacity: 0;
+            }
+    }
+    &_link{
+        font-family: 'Crimson Text', 'Book Antiqua', serif;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 25px;
+        text-decoration: none;
+        color: #1E0606;
+        opacity: 0.5;
+    }
+    &_link_active{
+        position: relative;
+        opacity: 1;
+        &:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        } 
+        &:active{
+            text-decoration: none;
+            cursor: pointer;
+            opacity: 0.5;
+        } 
+    }
+}

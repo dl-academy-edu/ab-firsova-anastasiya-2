@@ -1,0 +1,72 @@
+button {
+    border: 0;
+    background: transparent;
+}
+
+
+.pagination{
+    display: flex;
+    margin-top: 46px;
+    align-items: center;
+    padding-left: 20px;
+    margin-bottom: 58px;
+    &_list{
+        display: flex;
+    }
+    &__control_back{
+        margin-right: 456px;
+        padding: 0px;
+        &:hover path{
+            cursor: pointer;
+            fill: #C29974;
+        }
+        &:active path{
+            cursor: pointer;
+            fill: #C29974;
+            opacity: 0.5;
+        }        
+    }
+    &__control_back path{
+        fill:  rgba(30, 6, 6, 0.12);
+    }
+    &_item{
+        margin-right: 66px;
+        &:last-child{
+            margin-right: 0px;
+        }
+    }
+    &__button_active{
+        color: #C29974;
+    }
+    &__button{
+        padding: 0px;
+        font-family: 'Montserrat', 'Calibri',  sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        &:hover {
+            cursor: pointer;
+            opacity: 0.5;
+        }
+    }
+    &__control_forward{
+        margin-left: 453px;
+        padding: 0px;
+        &:hover path{
+            cursor: pointer;
+            fill: #C29974;
+        }
+        &:active path{
+            cursor: pointer;
+            fill: #C29974;
+            opacity: 0.5;
+        }
+    }
+    &__control_forward path{
+        fill:  rgba(30, 6, 6, 0.12);
+    }
+
+}
+

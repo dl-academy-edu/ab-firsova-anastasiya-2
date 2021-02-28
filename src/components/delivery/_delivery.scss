@@ -1,0 +1,81 @@
+.delivery {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+    &__img{
+        padding-left: 20px;
+    }
+    &__txt{
+        margin-right: 120px;
+    }
+    &__txt_subtitle{
+        margin-top: 32px;
+        font-size: 38px;
+        line-height: 46px;
+    }
+    &__txt__btn{
+        position: relative;
+        padding: 0px;
+        margin-top: 21px;
+        font-family: 'Crimson Text', 'Book Antiqua', serif;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 26px;
+        line-height: 32px;
+        color: #1E0606;
+        border: 0;
+        background: transparent;
+        transition: 0.4s;
+        &:hover{
+            cursor: pointer;
+            font-weight: 700;
+        }
+        &:hover::before{
+            content: '';
+            position: absolute;
+            width: 326px;
+            height: 55px;
+            top: -15px;
+            left: -60px;
+            background-color: rgba(112, 187, 220, 0.2);
+            cursor: pointer;
+            z-index: -1;
+        }
+    }
+    &__txt__btn_active{
+        position: relative;
+        font-weight: 700;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 326px;
+            height: 55px;
+            top: -15px;
+            left: -60px;
+            background-color: rgba(112, 187, 220, 0.2);
+            z-index: -1;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            width: 326px;
+            height: 55px;
+            top: -15px;
+            left: -60px;
+            background-color: rgba(112, 187, 220, 0.2);
+            z-index: -1;
+        }
+    }
+    &__txt__desc{
+        margin-top: 31px;
+        max-width: 480px;
+        &:nth-child(4){
+            margin-top: 16px;
+        }
+    }
+    &__txt_link{
+        margin-top: 27px;
+        width: 105px;
+        height: 22px;
+    }
+}

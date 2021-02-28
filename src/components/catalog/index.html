@@ -1,0 +1,41 @@
+<section class="catalog">
+    <h2 class="catalog_title visually-hidden">Catalog</h2>
+    <ul class="catalog_list">
+        @@include('catalog/catalog-card.html', {
+            "href":"#",
+            "img":"/static/images/ApparelKids.png",
+            "alt": "children's clothes",
+            "text":"Apparel kids"        
+          } )
+        @@include('catalog/catalog-card.html', {
+            "href":"#",
+            "img":"/static/images/HolidayShop.png",
+            "alt": "thing for a holiday",
+            "text":"Holiday shop"        
+         } )
+         @@include('catalog/catalog-card.html', {
+            "href":"/pages/toys/index.html",
+            "img":"/static/images/Toys.png",
+            "alt": "toy",
+            "text":"Toys"        
+          } )
+          @@include('catalog/catalog-card.html', {
+            "href":"#",
+            "img":"/static/images/Accessories.png",
+            "alt": "accessories",
+            "text":"Accessories"        
+          } )
+          @@include('catalog/catalog-card.html', {
+            "href":"#",
+            "img":"/static/images/Sale.png",
+            "alt": "sale",
+            "text":"Sale"        
+          } )
+          @@include('catalog/catalog-card.html', {
+            "href":"#",
+            "img":"/static/images/ApparelAdults.png",
+            "alt": "apparel adults",
+            "text":"Apparel Adults"        
+          } )
+    </ul>
+</section>
