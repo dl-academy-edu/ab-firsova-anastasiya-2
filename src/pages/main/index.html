@@ -11,42 +11,52 @@
     <link href="style.css" rel="stylesheet" />
     <link rel="stylesheet" href="/static/fonts/fonts.css" />
     <link rel="shortcut icon" href="/static/images/favicon.ico">
-    <title>Главная</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Main</title>
   </head>
   <body>
     @@include('header/index.html')
     <main class="main">
-      <h1 class="main_title visually-hidden">Design life kids</h1>
+      <h1 class="visually-hidden">Design life kids</h1>
       <section class="slider container">
           <div class="slider__holder">
-              <div class="slider__wrapper">
-                  <span class="slider__desc">01</span>
-                  <ul class="slider_list">
-                      <li class="slider_item">
-                          <button class="slider__btn slider__btn_active" aria-label="Go to the first slide"></button>
-                      </li>
-                      <li class="slider_item">
-                          <button class="slider__btn" aria-label="Go to the second slide"></button>
-                      </li>
-                      <li class="slider_item">
-                          <button class="slider__btn" aria-label="Go to the third slide"></button>
-                      </li>
-                      <li class="slider_item">
-                          <button class="slider__btn" aria-label="Go to the fourth slide"></button>
-                      </li>
-                  </ul>
-              </div>
-              <div class="slider__wrap">
-                  <h2 class="caption slider_title">The ooh noo collection</h2>
-                  <p class="subtitle slider__text">Designed in Slovenia</p>
-                  @@include('button/index.html', {
-                    "class": "btn",
-                    "text":"Explore now"
-                  })
-              </div>
-              <img src="/static/images/slider-pic.png" alt="slider image" class="slider__img" width="636" height="461">
-          </div>
-          <p class="slider__txt">Free (continental) USA shipping on all orders of $100 USD or more!</p>         
+            <div class="slider__wrapper">
+              <span class="slider__desc">01</span>
+              <ul class="slider__list list">
+                  <li class="slider__item">
+                      <button class="slider__btn slider__btn_active" aria-label="Go to the first slide"></button>
+                  </li>
+                  <li class="slider__item">
+                      <button class="slider__btn" aria-label="Go to the second slide"></button>
+                  </li>
+                  <li class="slider__item">
+                      <button class="slider__btn" aria-label="Go to the third slide"></button>
+                  </li>
+                  <li class="slider__item">
+                      <button class="slider__btn" aria-label="Go to the fourth slide"></button>
+                  </li>
+              </ul>
+            </div>
+            <div class="slider__wrap">
+                <h2 class="caption slider__title">The ooh noo collection</h2>
+                <p class="subtitle slider__text">Designed in Slovenia</p>
+                @@include('button/index.html', {
+                  "class": "slider__button",
+                  "text":"Explore now"
+                })
+            </div>
+            <div class="slider__img__wrapper">
+              <picture>
+                <source srcset="/static/images/slider-pic-mobile.png, /static/images/slider-pic-mobile2x.png 2x" media="(max-width: 767px)">
+                <source srcset="/static/images/slider-pic-tablet.png, /static/images/slider-pic-tablet2x.png 2x" media="(max-width: 1023px)">
+                <source srcset="/static/images/slider-pic.png, /static/images/slider-pic2x.png 2x">
+                <img src="/static/images/slider-pic.png" srcset="/static/images/slider-pic.png, /static/images/slider-pic2x.png 2x" alt="slider image" class="slider__img">
+              </picture>
+            </div>
+          </div> 
+        <div class="slider__txt__wrapper">
+            <p class="slider__txt">Free (continental) USA shipping on all orders of $100 USD or more!</p>
+        </div>  
       </section>
       @@include('products/index.html')
       @@include('delivery/index.html')
@@ -55,6 +65,6 @@
   </main>
     @@include('footer/index.html')
     @@include('popup/index.html')
-    <script src="scripts.js"></script>
+    <script src="/scripts.js"></script>
   </body>
 </html>

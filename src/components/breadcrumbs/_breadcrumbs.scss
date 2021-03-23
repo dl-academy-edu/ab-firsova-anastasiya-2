@@ -3,45 +3,42 @@
     flex-direction: row;
     align-items: center;
     margin-top: 13px;
-    &_item{
+    min-width: 130px;
+    &__item{
         position: relative;
-        padding-left: 20px;
-        padding-right: 25px;
+        padding-right: 40px;
         letter-spacing: 1px;
+        :nth-child(2){
+            padding-left: 0px;
+        }
         &::after{
             content: '';
             position: absolute;
-            top: 8px;
-            left: 82px;
+            top: 6px;
+            left: 54px;
             width: 8px;
             height: 12px;
             background-image: url('/static/images/Breadcrumbs.svg');
             background-repeat: no-repeat;
         } 
         &:nth-child(2)::after{
-            content: '';
-            position: absolute;
-            top: 8px;
-            left: 94px;
-            width: 8px;
-            height: 12px;
-            background-image: url('/static/images/Breadcrumbs.svg');
+            left: 77px;
         } 
         &:last-child:after{
             opacity: 0;
             }
     }
-    &_link{
+    &__link{
         font-family: 'Crimson Text', 'Book Antiqua', serif;
         font-style: italic;
         font-weight: normal;
-        font-size: 20px;
-        line-height: 25px;
+        font-size: 16px;
+        line-height: 20px;
         text-decoration: none;
         color: #1E0606;
         opacity: 0.5;
     }
-    &_link_active{
+    &__link_active{
         position: relative;
         opacity: 1;
         &:hover{
@@ -54,4 +51,66 @@
             opacity: 0.5;
         } 
     }
+}
+
+@media (min-width:768px) and (max-width:1023px){
+    .breadcrumbs {
+        max-width: 648px;
+        margin: 10px auto 0 auto;
+        &__item{
+            position: relative;
+            padding-right: 48px;
+            &::after{
+                content: '';
+                position: absolute;
+                top: 6px;
+                left: 68px;
+                width: 8px;
+                height: 12px;
+                background-image: url('/static/images/Breadcrumbs.svg');
+                background-repeat: no-repeat;
+            } 
+            &:nth-child(2)::after{
+                left: 92px;
+            }
+        }
+        &__link{
+            font-size: 20px;
+            line-height: 25px;
+        }
+
+    }
+    
+}
+
+
+@media (min-width: 1024px){
+    .breadcrumbs {
+        max-width: 1180px;
+        margin: 15px auto 0 auto;
+        padding-left: 45px;
+        &__item{
+            position: relative;
+            padding-right: 48px;
+            &::after{
+                content: '';
+                position: absolute;
+                top: 6px;
+                left: 68px;
+                width: 8px;
+                height: 12px;
+                background-image: url('/static/images/Breadcrumbs.svg');
+                background-repeat: no-repeat;
+            } 
+            &:nth-child(2)::after{
+                left: 87px;
+            }
+        }
+        &__link{
+            font-size: 20px;
+            line-height: 25px;
+        }
+
+    }
+    
 }

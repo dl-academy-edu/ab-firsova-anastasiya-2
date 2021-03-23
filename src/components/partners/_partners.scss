@@ -1,14 +1,15 @@
 .partners {
-    margin-top: 91px;
-    max-width: 1180px;
+    margin-top: 52px;
+    max-width: 375px;
     &_list{
         display: flex;
+        max-width: 335px;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
     }
     &_item{
-        padding-right: 127px;
+        padding-top: 31px;
         &:hover{
             opacity: 0.5;
             cursor: pointer;
@@ -20,5 +21,25 @@
         &:last-child{
             padding-right: 0px;
         }
-    }    
+    }
+}
+
+@media  (min-width: 768px) and (max-width: 1023px) {
+    .partners{
+        margin-top: 60px;
+        min-width: 648px;
+        &__list{
+            max-width: 628px;
+        }
+    }
+  }
+
+@media (min-width: 1024px){
+    .partners{
+        margin-top: 90px;
+        max-width: 1180px;
+        &__list{
+            min-width: 1180px;
+        }
+    }
 }

@@ -1,29 +1,35 @@
 <section class="delivery container">
-    <h2 class="delivery_title visually-hidden">Delivery</h2>
-    <img src="/static/images/delivery.png" alt="woman" class="delivery__img"  width="480" height="559">
-    <div class="delivery__txt">
-        <h2 class="delivery__txt_subtitle caption">Delivery</h2>
-        <ul class="delivery__txt_list">
-            <li class="delivery__txt_item">
-                <button class="delivery__txt__btn delivery__txt__btn_active">Delivery</button>
+    <h2 class="visually-hidden">Delivery</h2>
+    <picture class="delivery__img__wrapper">
+        <source srcset="/static/images/delivery-mobile.png, /static/images/delivery-mobile2x.png 2x" media="(max-width: 767px)">
+        <source srcset="/static/images/delivery-tablet.png, /static/images/delivery-tablet2x.png 2x" media="(max-width: 1023px)">
+        <source srcset="/static/images/delivery.png, /static/images/delivery2x.png 2x">   
+        <img src="/static/images/delivery.png" srcset="/static/images/delivery.png, /static/images/delivery2x.png 2x" alt="woman" class="delivery__img">
+    </picture>
+    
+    <div class="delivery__text">
+        <h2 class="delivery__subtitle caption">Delivery</h2>
+        <ul class="delivery__list list">
+            <li class="delivery__item">
+                <button class="delivery__btn delivery__btn_active">Delivery</button>
             </li>
-            <li class="delivery__txt_item">
-                <button class="delivery__txt__btn">Guarantee</button>
+            <li class="delivery__item">
+                <button class="delivery__btn">Guarantee</button>
             </li>
-            <li class="delivery__txt_item">
-                <button class="delivery__txt__btn">Credit</button>
+            <li class="delivery__item">
+                <button class="delivery__btn">Credit</button>
             </li>
         </ul>
-        <p class="delivery__txt__desc">
+        <p class="delivery__desc">
             Some days i feel like i've been working on dlk my entire life and there are other days that
             i am completely
             shocked that four years have flown by. It's simply magical.
         </p>
-        <p class="delivery__txt__desc">
+        <p class="delivery__desc">
             What started as an outlet to deal with the traumatic loss of my husband, dlk has now become a truly
             happy
             place for me and i have you and all of the beautiful designers that we work with to thank!
         </p>
-        <a href="#" class="delivery__txt_link btn">LEARN MORE</a>
+        <a href="#" class="delivery__link btn">LEARN MORE</a>
     </div>
 </section>

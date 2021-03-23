@@ -10,6 +10,7 @@
     <link href="style.css" rel="stylesheet" />
     <link rel="stylesheet" href="/static/fonts/oswald.css" />
     <link rel="shortcut icon" href="/static/images/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Игрушки</title>
   </head>
   <body>
@@ -17,7 +18,7 @@
     <main>
         <div class="container">
           <h1 class="title caption">Toy for kids</h1>
-          <ul class="breadcrumbs">
+          <ul class="breadcrumbs list">
             @@include('breadcrumbs/breadcrumbs-card-active.html', {
               "href":"/pages/main/index.html",
               "text":"Home"
@@ -35,7 +36,7 @@
         @@include('toys/index.html')    
   </main>
     @@include('footer/index.html')
-    <script src="index.js"></script>
+    <script src="/pages/toys/scripts.js"></script>
   </body>
 </html>
 

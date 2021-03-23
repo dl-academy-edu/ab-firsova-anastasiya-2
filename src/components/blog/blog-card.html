@@ -1,8 +1,15 @@
-<li class="blog_item">
-    <a href="@@href" class="blog_link">
-        <img src="@@img" alt="@@alt" class="blog_img">
-        <span class="blog_date">@@date</span>
-        <h2 class="blog_title caption">@@title</h2>
-        <p class="blog_text"> @@text</p>
+<li class="blog__item">
+    <a href="@@href" class="blog__link">
+        <div class="blog__img-wrapper">
+            <picture>
+                <source srcset="@@img-m, @@img-m2x 2x" media="(max-width: 767px)" class="blog__img">
+                <source srcset="@@img-t, @@img-t2x 2x" media="(max-width: 1023px)" class="blog__img">
+                <source srcset="@@img, @@img2x 2x"class="blog__img">
+                <img src="@@img" srcset="@@img, @@img2x 2x" alt="@@alt" class="blog__img">
+            </picture>
+        </div>
+        <span class="blog__date">@@date</span>
+        <h2 class="blog__title caption">@@title</h2>
+        <p class="blog__text">@@text</p>
     </a>
 </li>

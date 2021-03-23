@@ -11,26 +11,28 @@
     <link href="style.css" rel="stylesheet" />
     <link rel="stylesheet" href="/static/fonts/fonts.css" />
     <link rel="shortcut icon" href="/static/images/favicon.ico">
-    <title>Блог</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog</title>
   </head>
   <body>
     @@include('header/index.html')
     <main>
-        <div class="container">
-            <h1 class="title caption">Blog</h1>
-            <ul class="breadcrumbs">
-                @@include('breadcrumbs/breadcrumbs-card-active.html', {
-                    "href":"/pages/main/index.html",
-                    "text":"Home"
-                  })
-                  @@include('breadcrumbs/index.html', {
-                    "text":"Blog"
-                  })
-            </ul>
-            @@include('blog/index.html')
-        </div>        
+      <div class="container">
+        <h1 class="title caption">Blog</h1>
+        <ul class="breadcrumbs list">
+            @@include('breadcrumbs/breadcrumbs-card-active.html', {
+                "href":"/pages/main/index.html",
+                "text":"Home"
+              })
+              @@include('breadcrumbs/index.html', {
+                "text":"Blog"
+              })
+        </ul>
+        @@include('blog/index.html')
+    </div>
     </main>
     @@include('footer/index.html')
-    <script src="index.js"></script>
+    <script src="/pages/blog/scripts.js"></script>
   </body>
-</html>
+  </html>
+

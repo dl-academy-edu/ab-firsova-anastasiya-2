@@ -11,14 +11,15 @@
     <link href="style.css" rel="stylesheet" />
     <link rel="stylesheet" href="/static/fonts/fonts.css" />
     <link rel="shortcut icon" href="/static/images/favicon.ico">
-    <title>Каталог</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Catalog</title>
   </head>
   <body>
     @@include('header/index.html')
     <main>
       <div class="container">
           <h1 class="title caption">Category Products</h1>
-          <ul class="breadcrumbs">
+          <ul class="breadcrumbs list">
             @@include('breadcrumbs/breadcrumbs-card-active.html', {
               "href":"/pages/main/index.html",
               "text":"Home"
@@ -27,12 +28,12 @@
               "text":"Catalog"
             })
           </ul>
-          @@include('catalog/index.html')
+           @@include('catalog/index.html')
           @@include('product/index.html')
       </div>
   </main>
     @@include('footer/index.html')
-    <script src="index.js"></script>
+    <script src="/pages/catalog/scripts.js"></script>
   </body>
 </html>
 

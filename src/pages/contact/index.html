@@ -10,36 +10,37 @@
     <link href="style.css" rel="stylesheet" />
     <link rel="stylesheet" href="/static/fonts/oswald.css" />
     <link rel="shortcut icon" href="/static/images/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Контакты</title>
   </head>
   <body>
     @@include('header/index.html')
     <main>
       <div class="container">
-          <h1 class="title caption">Contact Us</h1>
-          <ul class="breadcrumbs">
-            @@include('breadcrumbs/breadcrumbs-card-active.html', {
-              "href":"/pages/main/index.html",
-              "text":"Home"
-            })
-            @@include('breadcrumbs/index.html', {
-              "text":"Contact Us"
-            })
-          </ul>
-        <section class="contact">
-          <h2 class="visually-hidden">Information</h2>
-          @@include('form/index.html')
-          <div class="contact__info">
-            <p class="contact__info__desc">Our support team are on-hand to assist with any issues you are experiencing.</p>
-            <p class="contact__info__desc">Please use the form to contact us with your needs. Send us a message and we'll respond as
-                soon as possible.</p>
-            <p class="contact__info__text">An expert is waiting to help you!</p>
-          </div>
-        </section>
+        <h1 class="title caption">Contact Us</h1>
+        <ul class="breadcrumbs list">
+          @@include('breadcrumbs/breadcrumbs-card-active.html', {
+            "href":"/pages/main/index.html",
+            "text":"Home"
+          })
+          @@include('breadcrumbs/index.html', {
+            "text":"Contact Us"
+          })
+        </ul>
+      <section class="contact">
+        <h2 class="visually-hidden">Information</h2>
+        @@include('form/index.html')
+        <div class="contact-info">
+          <p class="contact-info__desc">Our support team are on-hand to assist with any issues you are experiencing.</p>
+          <p class="contact-info__desc">Please use the form to contact us with your needs. Send us a message and we'll respond as
+              soon as possible.</p>
+          <p class="contact-info__text">An expert is waiting to help you!</p>
+        </div>
+      </section>
       </div>
     </main>
     @@include('footer/index.html')
-    <script src="index.js"></script>
+    <script src="/pages/contact/scripts.js"></script>
   </body>
 </html>
 
