@@ -11,20 +11,14 @@
         max-width: 335px;
         margin-right: 10px;
         margin-top: 10px;
+        &_bottom{
+            margin-top: 10px;
+        }
         &:nth-child(1){
-            margin-top: 0px;
+            margin-top: 0;
         }
         &:nth-child(3n) {
-            margin-right: 0px;
-        }
-        &:nth-child(4) {
-            margin-top: 10px;
-        }
-        &:nth-child(5) {
-            margin-top: 10px;
-        }
-        &:nth-child(6) {
-            margin-top: 10px;
+            margin-right: 0;
         }
     }
     &__link{
@@ -113,18 +107,11 @@
         }
         &__item {
             max-width: 380px;
-            margin-right: 20px;
             margin-top: 0px;
             &:nth-child(3n) {
-                margin-right: 0px;
+                margin-right: 0;
             }
-            &:nth-child(4) {
-                margin-top: 36px;
-            }
-            &:nth-child(5) {
-                margin-top: 36px;
-            }
-            &:nth-child(6) {
+            &_bottom{
                 margin-top: 36px;
             }
         }
