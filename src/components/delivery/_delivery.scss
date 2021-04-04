@@ -5,8 +5,8 @@
     margin-top: 80px;
     &__img{
         &__wrapper{
-            width: 335px;
-            height: 357px;
+            max-width: 335px;
+            max-height: 357px;
         }
     }
     &__txt{
@@ -15,14 +15,6 @@
     &__list{
         margin-top: 13px;
     }
-    // &__item{
-    //     height: 30px;
-    //     width: 80px;
-    //     margin-top: 15px;
-    //     :nth-child(1){
-    //         margin-top: 28px;
-    //     }
-    // }
     &__btn{
         position: relative;
         margin-top: 15px;
@@ -115,8 +107,8 @@
             line-height: 44px;
         }
         &__img__wrapper{
-            width: 258px;
-            height: 512px;
+            max-width: 258px;
+            max-height: 512px;
         }
         &__btn{
             margin-top: 15px;
@@ -148,8 +140,8 @@
             line-height: 46px;
         }
         &__img__wrapper{
-                width: 480px;
-                height: 559px;
+                max-width: 380px;
+                max-height: 559px;
                 padding-left: 20px;
         }
         &__txt{

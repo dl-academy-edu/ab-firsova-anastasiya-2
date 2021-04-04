@@ -2,10 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Open+Sans:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link href="/common.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
@@ -13,6 +10,7 @@
     <link rel="shortcut icon" href="/static/images/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Grid</title>
+    <meta name="description" content="Creating a grid using CSS Grid">
   </head>
   <body>
     @@include('header/index.html')
@@ -72,8 +70,8 @@
               <p class="grid__text">IMAC.RETINA</p>
               <p class="grid__desc">Hardly a month passes these days where</p>
               <picture>
-                <source srcset="/static/images/grid/monitor-mobile.png, /static/images/grid/monitor-mobile2x.png 2x" media="(max-width: 767px)">
-                <source srcset="/static/images/grid/monitor-tablet.png, /static/images/grid/monitor-tablet2x.png 2x" media="(max-width: 1023px)">
+                <source srcset="/static/images/grid/monitor-mobile.png, /static/images/grid/monitor-mobile2x.png 2x" media="(max-width: 767px)" >
+                <source srcset="/static/images/grid/monitor-tablet.png, /static/images/grid/monitor-tablet2x.png 2x" media="(max-width: 1023px)" >
                 <source srcset="/static/images/grid/monitor.png, /static/images/grid/monitor2x.png 2x" media="(min-width: 1024px)">
                 <img src="/static/images/grid/monitor.png" alt="monitor">
               </picture>

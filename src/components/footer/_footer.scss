@@ -7,14 +7,6 @@
     max-width: 335px;
     padding-bottom: 23px;
     border-bottom: 1px solid #666666;
-
-    @media (min-width: 1024px) {
-      max-width: 1180px;
-      margin: 0px auto;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-
   }
   &__text{
     margin-top: 70px;
@@ -22,20 +14,11 @@
     max-width: 335px;
     border-bottom: 1px solid #666666;
     color: #AAAAAA;
-
-    @media  (min-width: 1024px){
-      min-width: 380px;
-    }
-
   }
   &__list {
     list-style-position: inside;
     column-count: 2;
     margin-top: 20px;
-
-    @media  (min-width: 1024px){
-      column-count: 1;
-    }
   }
   &__navigation__item{
     margin-top: 15px;
@@ -107,7 +90,6 @@
         margin-top: 25px;
         max-width: 72px;
       }
-      
     }
   }
   &__social-list{
@@ -118,10 +100,6 @@
   }
   &__social-item{
     padding-right: 15px;
-
-    @media (min-width: 1024px){
-      padding-right: 10px;
-    }
   }  
   &__social-link{
     transition: 0.4s;
@@ -135,8 +113,6 @@
   &__bottom-raiting{
     display: flex;
     padding-top: 24px;
-    
-
     &__desc{
       position: absolute;
       min-width: 123px;
@@ -185,11 +161,8 @@
       &:active{
         text-decoration: underline;
         color: #FFFFFF;
-      }
-     
-      
+      }     
     }
-    
   }
 }
 
@@ -239,3 +212,47 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .footer{
+    &__wrapper{
+      max-width: 1180px;
+      margin: 0px auto;
+      flex-direction: row;
+      &:nth-child(2){
+        justify-content: space-between;
+      }
+    }
+    &__text{
+        min-width: 380px;
+        margin-right: 20px;
+    }
+    &__list{
+      column-count: 1;
+    }
+    &__connect{
+      &__form{
+        &__input {
+          min-width: 290px;
+        }
+        &__button{
+          min-width: 81px;
+        }
+      }
+    }
+    &__social-item{
+      padding-right: 10px;
+    }
+    &__bottom-raiting{
+      display: flex;
+      padding-top: 24px;
+      &__text{
+        padding-top: 23px;
+      }
+      &__link{
+        padding-top: 23px;
+      }
+  }
+  }
+
+ 
+}
