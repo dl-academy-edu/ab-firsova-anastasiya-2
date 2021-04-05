@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <link href="/common.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/static/fonts/oswald.css" />
+    <link rel="shortcut icon" href="/static/images/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Toys</title>
+    <meta name="description" content="Toys">
+  </head>
+  <body>
+    @@include('header/index.html')
+    <main>
+        <div class="container">
+          <h1 class="title caption">Toy for kids</h1>
+          <ul class="breadcrumbs list">
+            @@include('breadcrumbs/breadcrumbs-card-active.html', {
+              "href":"/pages/main/index.html",
+              "text":"Home"
+            })
+            @@include('breadcrumbs/breadcrumbs-card-active.html', {
+              "href":"/pages/catalog/index.html",
+              "text":"Catalog"
+            })
+            @@include('breadcrumbs/index.html', {
+              "text":"Toys"
+            })
+          </ul>
+        </div>
+        @@include('form-toys/index.html')
+        @@include('toys/index.html')    
+  </main>
+    @@include('footer/index.html')
+    <script src="/pages/toys/scripts.js"></script>
+  </body>
+</html>
+
