@@ -60,13 +60,12 @@
       opacity: 0.2;
     }
     &__img{
-      max-width: 13px;
-      max-height: 13px;
+      max-width: 17px;
+      max-height: 17px;
     }    
   }
   &__contact {
     padding-left: 20px;
-    padding-right: 20px;
     font-weight: bold;
     font-size: 14px;
     line-height: 19px;
@@ -83,7 +82,8 @@
   }
   &__btn_tablet{
     background: transparent;
-    border: block;
+    border: none;
+    display: block;
   }
 }
 
@@ -98,7 +98,7 @@
   bottom: 0;
   right: 0;
   background-color: rgba(125, 151, 218, 0.8);
-  z-index: 2;
+  z-index: 3;
 
   &_open {
     display: block;
@@ -170,7 +170,8 @@
   }
   .tablet-header{
     &__wrapper{
-      max-width: 728px;
+      max-width: 648px;
+      margin: 0 35px;
     }
   }
   
@@ -184,7 +185,8 @@
     &__img{
       max-width: 100px;
       max-height: 52px;
-      padding-right: 20px;
+      padding-right: 60px;
+      padding-left: 0;
     }
     &__nav_list{
       flex-direction: row;
@@ -194,10 +196,11 @@
       max-width: 17px;
         max-height: 17px;
     }
-    &__button_tablet{
+    &__btn_tablet{
+      background: transparent;
+      border: none;
       display: none;
     }
-
   }
 }
 

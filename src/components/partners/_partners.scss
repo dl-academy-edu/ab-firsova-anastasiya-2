@@ -10,7 +10,7 @@
         max-width: 1180px;
     }    
 
-    &_list{
+    &__list{
         display: flex;
         max-width: 335px;
         justify-content: space-between;
@@ -23,7 +23,7 @@
             min-width: 1180px;
         }
     }
-    &_item{
+    &__item{
         padding-top: 31px;
         &:hover{
             opacity: 0.5;
@@ -35,6 +35,9 @@
         }
         &:last-child{
             padding-right: 0px;
+        }
+        @media (min-width:1024px) {
+            padding-top: 0;
         }
     }
 }

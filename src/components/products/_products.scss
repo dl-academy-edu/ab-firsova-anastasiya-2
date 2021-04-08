@@ -33,6 +33,7 @@
         }
         &:nth-child(4){
             background-color: #D5D4E1;
+            margin-right: 0px;
         }
         &:hover {
             text-decoration: underline;
@@ -164,11 +165,14 @@
         }
         &__desc{
             min-width: 580px;
+            margin-top: 5px;
+            margin-left: 5px;
         }
         &__item{
             position: relative;
             width: 270px;
             height: 280px;
+            margin-right: 32px;
         }
         &__link{
             position: absolute;

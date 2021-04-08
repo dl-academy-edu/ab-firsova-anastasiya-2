@@ -91,7 +91,7 @@
     @media  (min-width: 1024px){
       position: absolute;
       left: 445px;
-      top: -50px;
+      top: -93px;
       width: 635.49px;
       height: 461px;
     }
@@ -176,13 +176,13 @@
       margin-top: 129px;
       flex-direction: row;
       max-width: 1180px;
-      max-height: 411px;
+      max-height: 367px;
       background-color: #EEE4DB;
       
     }
     &__wrapper{
-      margin-top: 18px;
-      margin-left: 28px;
+      margin-top: 12px;
+      margin-left: 31px;
       margin-right: 44px;
     }
     &__title{
@@ -205,6 +205,10 @@
         max-width: 1180px;
         background-color: #C29974;
       }
+    }
+    &__button{
+      font-size: 16px;
+      line-height: 22px;
     }
   }
 }

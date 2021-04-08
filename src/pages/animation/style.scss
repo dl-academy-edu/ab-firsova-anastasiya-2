@@ -12,20 +12,31 @@
         left: 50%;
     }
     100%{
-        opacity: 1;
-        left: 100%;
+        opacity: 0;
+        left: 98%;
     }
  }
 
  @keyframes taxi{
     0%{
-        left: 100%;
+        opacity: 0;
+        left: 98%;
+    }
+    5%{
+        opacity: 1;
+        left: 97%;
     }
     50%{
+        opacity: 1;
         left: 50%;
         animation-delay: 3s;
     }
+    99%{
+        opacity: 1;
+        left: -60%;
+    }
     100%{
+        opacity: 0;
         left: -64%;
     }
  }
