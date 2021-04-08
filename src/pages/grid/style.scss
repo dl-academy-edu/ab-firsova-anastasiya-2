@@ -178,7 +178,7 @@ a{
             margin: 30px 0 0;
         }
         img{
-            margin: 0 51px;
+            margin: 0 0 0 51px;
         }
     }
     &__wrapper{
@@ -426,7 +426,7 @@ a{
         }
     }
     &__blok_6 img{
-        margin: 32px auto 0;
+        margin: 35px auto 0;
         @media (min-width:768px) and (max-width:1023px){
             margin: 87px auto 0;
         }

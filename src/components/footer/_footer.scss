@@ -113,6 +113,10 @@
   &__bottom-raiting{
     display: flex;
     padding-top: 24px;
+    @media (min-width:768px) and (max-width: 1023px) {
+          max-width: 100%;
+          margin-right: 193px;
+    }
     &__desc{
       position: absolute;
       min-width: 123px;
@@ -146,6 +150,10 @@
     &__text{
       padding-top: 15px;
       color: #FFFFFF;
+      @media (min-width:768px) and (max-width: 1023px) {
+          max-width: 100%;
+          margin-right:43px;
+  }
     }
     &__link{
       text-decoration: none;
@@ -201,14 +209,6 @@
     &__social-item{
       padding-right: 10px;
     }
-    &__bottom-rating{
-      max-width: 100%;
-      margin-right: 193px;
-      &__text{
-          max-width: 100%;
-          margin-right:43px;
-      }
-    }
   }
 }
 
@@ -218,13 +218,12 @@
       max-width: 1180px;
       margin: 0px auto;
       flex-direction: row;
-      &:nth-child(2){
-        justify-content: space-between;
-      }
     }
     &__text{
-        min-width: 380px;
-        margin-right: 20px;
+      margin-top: 98px;
+      min-width: 380px;
+      margin-right: 20px;
+      padding-bottom: 23px;
     }
     &__list{
       column-count: 1;
@@ -232,11 +231,23 @@
     &__connect{
       &__form{
         &__input {
-          min-width: 290px;
+          min-width: 282px;
         }
         &__button{
           min-width: 81px;
         }
+      }
+    }
+    &__navigation__item{
+      margin-top: 18px;
+      &:nth-child(1){
+        margin-top: 10px;
+      }
+    }
+    &__customer__item{
+      margin-top: 18px;
+      &:nth-child(1){
+        margin-top: 10px;
       }
     }
     &__social-item{
@@ -245,11 +256,17 @@
     &__bottom-raiting{
       display: flex;
       padding-top: 24px;
+      margin-right: 154px;
+      &__wrapper{
+        padding-left: 148px;
+      }
       &__text{
         padding-top: 23px;
+        margin-right: 109px;
       }
       &__link{
         padding-top: 23px;
+        margin-right: 0;
       }
   }
   }
